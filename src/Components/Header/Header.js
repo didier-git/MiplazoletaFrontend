@@ -1,30 +1,27 @@
 import React from "react"
 
 import "./Header.css"
+import {Link} from "react-router-dom"
 
 
-class Header extends React.Component {
-
-    render(){
+export default function Header () {
         return(
         <header className="main center-v center-h">
-               <nav class="navi">
+               <nav className="navi">
                     <ul>
-                    <li><a href="/">Menus</a></li>
-                    <li><a href="/Platos">Platos</a></li>
-                    <li><a href="/CrearPlato">Crear Plato</a></li>
-                    <li><a href="/CrearMenu">Crear Menu</a></li>
-                    <li className="title"><a href="/">MI PLAZOLETA</a></li>
+                    <li><Link to="/Platos">Platos</Link></li>
+                    <li><Link to="/CrearPlato">Crear Plato</Link></li>
+                    <li><Link to="/CrearMenu">Crear Menu</Link></li>
+                    <li><Link to="/">Menus</Link></li>
+                    <li className="title"><Link to="/">MI PLAZOLETA</Link></li>
                     </ul>
               </nav>
         </header>
         );
-    }
 
 
 } 
 
-export default Header
 
 
 

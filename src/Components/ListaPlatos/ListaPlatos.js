@@ -1,14 +1,7 @@
 import React from "react";
-import { Component } from "react";
 
-class ListaPlatos extends Component{
-
-    render(){
+export default function ListaPlatos (){
         return(
             <h1>Soy lista de platos</h1>
         );
-    }
-
 }
-
-export default ListaPlatos
